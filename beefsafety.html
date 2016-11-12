@@ -1,0 +1,31 @@
+<html>
+<meta>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://code.angularjs.org/1.0.7/angular.js"></script>
+
+<script src="beefsafety.js"></script>
+</meta>
+
+<body>
+<div class=container>
+	<h2>
+	Beef Safety Resource API Search
+	</h2>
+
+	<h4 ng-app="solrapp">
+		<span class="label label-info">Search Results:</span>
+		<search-results solr-url="http://api.beefsafetyresource.com/solr/select?wt=json" query="beef" display-field="name">
+
+		</search-results>
+	</h4>
+</div>
+</body>
+</html>
